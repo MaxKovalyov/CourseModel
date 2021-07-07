@@ -1,5 +1,8 @@
 body {
     margin: 0 auto;
+    background: #e6f4fd;
+    font-family: 'Roboto', sans-serif;
+    color: #4a90e2;
 }
 
 header {
@@ -27,19 +30,19 @@ header {
 }
 
 .action-button {
-    display: inline-block;
-    padding: 10px 20px;
-    margin: 10px 20px;
-    background: linear-gradient(to bottom, #ffffff, #9c9c9c);
+    padding: 5px 15px;
+    margin: 5px 15px;
+    line-height: 42px;
+    background: #4a90e2;
+    border-width: 0;
+    color: white;
     font-size: 20px;
-    font-weight: 500;
-    border-radius: 100px;
+    display: inline-block;
+    font-family: 'Roboto', sans-serif;
+    border-width: 0;
+    border-bottom: 2px solid #4a90e2;
+    transition: all 0.2s ease;
     text-decoration: none;
-    border: 2px solid transparent;
-}
-
-.action-button:hover {
-    background: rgb(204, 193, 193);
 }
 
 .view-table {
@@ -57,4 +60,5 @@ td, th {
     margin: auto;
     border: 2px solid gray;
     border-collapse: collapse;
+    background: #fff;
 }
