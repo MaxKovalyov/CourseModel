@@ -3,12 +3,17 @@
 namespace application\controllers;
 
 use application\core\Controller;
+use application\models\MainStudent;
 
 class MainStudentController extends Controller
 {
 
     public function indexAction() {
-        $this->view->render('Students');
+
+        $model = new MainStudent();
+        $data = $model->getDataFormTable();
+
+        $this->view->render('Students',$data);
     }
 
 

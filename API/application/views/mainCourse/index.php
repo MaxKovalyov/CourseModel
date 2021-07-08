@@ -20,40 +20,17 @@
     <div class="view-table">
         <table class="data-table" id="data-table">
             <tr>
-                <th>Имя</th>
-                <th>Адрес</th>
-                <th>Телефон</th>
-                <th>Какой-то длинный пиздец</th>
-                <th>Оценки</th>
+                <th>Номер курса</th>
+                <th>Название</th>
+                <th>Стоимость обучения</th>
             </tr>
-            <tr>
-                <td>1</td>
-                <td>1</td>
-                <td>1</td>
-                <td>1</td>
-                <td>1</td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td>2</td>
-                <td>2</td>
-                <td>2</td>
-                <td>2</td>
-            </tr>
-            <tr>
-                <td>3</td>
-                <td>3</td>
-                <td>3</td>
-                <td>3</td>
-                <td>3</td>
-            </tr>
-            <tr>
-                <td>4</td>
-                <td>4</td>
-                <td>4</td>
-                <td>4</td>
-                <td>4</td>
-            </tr>
+            <?php
+            
+            foreach($data as $key=>$value) {
+                echo '<tr><td>'.$data[$key]['idCourse'].'</td><td>'.$data[$key]['nameCourse'].'</td><td>'.$data[$key]['costCourse'].'</td></tr>';
+            }
+
+            ?>
         </table>
     </div>
     <div class="place-buttons">
