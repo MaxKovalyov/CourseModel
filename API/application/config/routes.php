@@ -17,6 +17,26 @@ return [
         'action' => 'index',
     ],
 
+    'mainStudent/index' => [
+        'controller' => 'mainStudent',
+        'action' => 'index',
+    ],
+
+    'mainCourse/index' => [
+        'controller' => 'mainCourse',
+        'action' => 'index',
+    ],
+
+    'mainProfessor/index' => [
+        'controller' => 'mainProfessor',
+        'action' => 'index',
+    ],
+
+    'mainStudentsOfCourses/index' => [
+        'controller' => 'mainStudentsOfCourses',
+        'action' => 'index',
+    ],
+
     'createStudent/index' => [
         'controller' => 'createStudent',
         'action' => 'index',

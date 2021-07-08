@@ -20,69 +20,17 @@
 </head>
 <body>
     <header>
-        <div class="current-table-marker">
-            <?php
-                echo '<p>'.$name.'</p>';
-            ?> 
-        </div>
         <nav>
             <!-- <a class="nav-item" onclick="switchTable('Course');" href="">Courses</a>
             <a class="nav-item" onclick="switchTable('Student');" href="">Students</a>
             <a class="nav-item" onclick="switchTable('Professor');" href="">Professors</a>
             <a class="nav-item" onclick="switchTable('StudentsOfCourses');" href="">Conducting courses</a> -->
-            <a class="nav-item" href="">Courses</a>
-            <a class="nav-item" href="">Students</a>
-            <a class="nav-item" href="">Professors</a>
-            <a class="nav-item" href="">Conducting courses</a>
+            <a class="nav-item" href="/mainCourse/index">Courses</a>
+            <a class="nav-item" href="/mainStudent/index">Students</a>
+            <a class="nav-item" href="/mainProfessor/index">Professors</a>
+            <a class="nav-item" href="/mainStudentsOfCourses/index">Conducting courses</a>
         </nav>
     </header>
-    <div class="view-table">
-        <table class="data-table" id="data-table">
-            <tr>
-                <th>Имя</th>
-                <th>Адрес</th>
-                <th>Телефон</th>
-                <th>Какой-то длинный пиздец</th>
-                <th>Оценки</th>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td>1</td>
-                <td>1</td>
-                <td>1</td>
-                <td>1</td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td>2</td>
-                <td>2</td>
-                <td>2</td>
-                <td>2</td>
-            </tr>
-            <tr>
-                <td>3</td>
-                <td>3</td>
-                <td>3</td>
-                <td>3</td>
-                <td>3</td>
-            </tr>
-            <tr>
-                <td>4</td>
-                <td>4</td>
-                <td>4</td>
-                <td>4</td>
-                <td>4</td>
-            </tr>
-        </table>
-    </div>
-    <div class="place-buttons">
-        <?php
-            echo '<a href="/create'.$name.'/index" class="action-button" id="create">Create</a>';
-            echo '<a href="/update'.$name.'/index" class="action-button" id="update">Update</a>';
-        ?>
-        <input type="text" id="indexField" placeholder="Введите индекс" class="index-field">
-        <a href="" class="action-button" id="delete">Delete</a>
-        <a href="" class="action-button" id="report">Download report</a>
-    </div>
+    <h1>Select table</h1>
 </body>
 </html>
