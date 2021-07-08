@@ -7,6 +7,7 @@ class View
 
     public $path;
     public $route;
+    public static $name = "Student";
 
     public function __construct($route) {
         $this->route = $route;
@@ -18,8 +19,9 @@ class View
         //debug($this->path);
         if(file_exists('application/views/'.$this->path.'.php')) {
             ob_start();
-            $content = ob_get_clean();
-            $name = ucfirst($this->route['controller']);
+            //debug($this::$name);
+            $name = $this::$name;
+            //$name = ucfirst($this->route['controller']);
             require 'application/views/'.$this->path.'.php';
         } else {
             View::errorCode(404);
