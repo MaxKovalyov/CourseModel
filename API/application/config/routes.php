@@ -52,9 +52,9 @@ return [
         'action' => 'index',
     ],
 
-    'updateStudentsOfCourses/validation' => [
+    'updateStudentsOfCourses/index' => [
         'controller' => 'updateStudentsOfCourses',
-        'action' => 'validation',
+        'action' => 'index',
     ],
 
 
