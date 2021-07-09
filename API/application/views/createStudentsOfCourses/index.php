@@ -9,13 +9,13 @@
 </head>
 <body>
     <div class="form-container">
-        <form class="ui-form" action="index" method="POST">
+        <form class="ui-form" action="/createStudentsOfCourses/index" method="POST">
             <h3>Добавление информации о проведении курса</h3>
             <div class="form-row">
-                <input type="text" id="idCourse" name="idCourse" required autocomplete="off"><label for="idCourse">Номер курса</label>
+                <input type="text" id="idStudent" name="idStudent" required autocomplete="off"><label for="idStudent">Номер студента</label>
             </div>
             <div class="form-row">
-                <input type="text" id="idStudent" name="idStudent" required autocomplete="off"><label for="idStudent">Номер студента</label>
+                <input type="text" id="idCourse" name="idCourse" required autocomplete="off"><label for="idCourse">Номер курса</label>
             </div>
             <div class="form-row">
                 <input type="text" id="idProfessor" name="idProfessor" required autocomplete="off"><label for="idProfessor">Номер профессора</label>

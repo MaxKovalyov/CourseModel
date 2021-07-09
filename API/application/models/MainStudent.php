@@ -4,6 +4,7 @@ namespace application\models;
 
 use application\core\Model;
 use application\lib\Db;
+use PDOException;
 
 class MainStudent extends Model{
 
@@ -11,7 +12,12 @@ class MainStudent extends Model{
 
         $sql = "SELECT * FROM student";
         $db = new Db();
-        $data = $db->query($sql);
+        try {
+            $data = $db->query($sql);
+        }
+        catch(PDOException $e) {
+            echo "Read error: ".$e->getMessage();
+        }
         return $data->fetchAll();
         
     }
@@ -19,7 +25,12 @@ class MainStudent extends Model{
     public function deleteRecord($index) {
         $db = new Db();
         $sql = "DELETE FROM student WHERE idStudent=$index";
-        $db->query($sql);
+        try {
+            $db->query($sql);
+        }
+        catch(PDOException $e) {
+            echo "Delete error: ".$e->getMessage();
+        }
     }
 
     public function updateRecord($data) {
@@ -33,7 +44,12 @@ class MainStudent extends Model{
         $email = $data['email'];
         $perform = (float)$data['perform'];
         $sql = "UPDATE student SET nameStudent = '$name', addressStudent = '$address', phoneStudent = '$phone', emailStudent = '$email', performStudent = $perform WHERE idStudent = $id;";
-        $db->query($sql);
+        try {
+            $db->query($sql);
+        }
+        catch(PDOException $e) {
+            echo "Update error: ".$e->getMessage();
+        }
         $db = null;
     }
 

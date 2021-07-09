@@ -9,7 +9,7 @@
 </head>
 <body>
     <div class="form-container">
-        <form class="ui-form" action="index" method="POST">
+        <form class="ui-form" action="/createCourse/index" method="POST">
             <h3>Создание курса</h3>
             <div class="form-row">
                 <input type="text" id="idCourse" name="id" required autocomplete="off"><label for="idCorse">Номер курса</label>

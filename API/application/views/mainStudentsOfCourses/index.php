@@ -25,15 +25,15 @@
     <div class="view-table">
         <table class="data-table" id="data-table">
             <tr>
-                <th>Номер курса</th>
                 <th>Номер студента</th>
+                <th>Номер курса</th>
                 <th>Учётный номер профессора</th>
                 <th>Оценка студента за курс</th>
             </tr>
             <?php
             
             foreach($data as $key=>$value) {
-                echo '<tr><td>'.$data[$key]['idCourse'].'</td><td>'.$data[$key]['idStudent'].'</td><td>'.$data[$key]['idProfessor'].'</td><td>'.$data[$key]['noteStudent'].'</td></tr>';
+                echo '<tr><td>'.$data[$key]['idStudent'].'</td><td>'.$data[$key]['idCourse'].'</td><td>'.$data[$key]['idProfessor'].'</td><td>'.$data[$key]['noteStudent'].'</td></tr>';
             }
 
             ?>
@@ -42,7 +42,7 @@
     <div class="place-buttons">
         <a href="/createStudentsOfCourses/index" class="action-button" id="create">Create</a>
         <form action="index" id="form" method="POST">
-            <input type="submit" onclick="setAction('update')" value="Update" class="action-button" id="update">
+            <input type="submit" onclick="setAction('/updateStudentsOfCourses/index')" value="Update" class="action-button" id="update">
             <input type="text" id="indexField" name="index" placeholder="Введите индекс" class="index-field">
             <input type="submit" onclick="setAction('index')" value="Delete" class="action-button" id="delete">
         </form>

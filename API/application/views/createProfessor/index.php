@@ -9,7 +9,7 @@
 </head>
 <body>
     <div class="form-container">
-        <form class="ui-form" action="index" method="POST">
+        <form class="ui-form" action="/createProfessor/index" method="POST">
             <h3>Добавление профессора</h3>
             <div class="form-row">
                 <input type="text" id="idProfessor" name="id" required autocomplete="off"><label for="idProfessor">Номер профессора</label>

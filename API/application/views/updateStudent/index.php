@@ -12,7 +12,7 @@
         <form class="ui-form" action="/mainStudent/index" method="POST">
             <h3>Изменение студента</h3>
             <div class="form-row">
-                <input type="text" id="idStudent" value="<?php echo $data['idStudent'] ?>" name="id" readonly><label for="idStudent">Номер зачётки</label>
+                <input type="text" id="idStudent" value="<?php echo $data['idStudent'] ?>" name="id" readonly><label class="readonly" for="idStudent">Номер зачётки</label>
             </div>
             <div class="form-row">
                 <input type="text" id="nameStudent" value="<?php echo $data['nameStudent'] ?>" name="name" required autocomplete="off"><label for="nameStudent">Имя</label>

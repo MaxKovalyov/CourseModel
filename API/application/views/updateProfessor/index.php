@@ -9,22 +9,22 @@
 </head>
 <body>
     <div class="form-container">
-        <form class="ui-form" action="">
+        <form class="ui-form" action="/mainProfessor/index" method="POST">
             <h3>Изменение профессора</h3>
             <div class="form-row">
-                <input type="text" id="idProfessor" required autocomplete="off"><label for="idProfessor">Номер профессора</label>
+                <input type="text" id="idProfessor" value="<?php echo $data['idProfessor'] ?>" name="id" readonly><label class="readonly" for="idProfessor">Номер профессора</label>
             </div>
             <div class="form-row">
-                <input type="text" id="nameProfessor" required autocomplete="off"><label for="nameProfessor">Имя</label>
+                <input type="text" id="nameProfessor" value="<?php echo $data['nameProfessor'] ?>" name="name" required autocomplete="off"><label for="nameProfessor">Имя</label>
             </div>
             <div class="form-row">
-                <input type="text" id="addressProfessor" required autocomplete="off"><label for="addressProfessor">Адрес</label>
+                <input type="text" id="addressProfessor" value="<?php echo $data['addressProfessor'] ?>" name="address" required autocomplete="off"><label for="addressProfessor">Адрес</label>
             </div>
             <div class="form-row">
-                <input type="text" id="phoneProfessor" required autocomplete="off"><label for="phoneProfessor">Телефон</label>
+                <input type="text" id="phoneProfessor" value="<?php echo $data['phoneProfessor'] ?>" name="phone" required autocomplete="off"><label for="phoneProfessor">Телефон</label>
             </div>
             <div class="form-row">
-                <input type="text" id="salaryProfessor" required autocomplete="off"><label for="salaryProfessor">Зарплата</label>
+                <input type="text" id="salaryProfessor" value="<?php echo $data['salaryProfessor'] ?>" name="salary" required autocomplete="off"><label for="salaryProfessor">Зарплата</label>
             </div>
             <p>
                 <input type="submit" value="Отправить" id="submitProfessor">

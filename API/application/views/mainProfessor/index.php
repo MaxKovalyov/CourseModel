@@ -43,7 +43,7 @@
     <div class="place-buttons">
         <a href="/createProfessor/index" class="action-button" id="create">Create</a>
         <form action="index" id="form" method="POST">
-            <input type="submit" onclick="setAction('update')" value="Update" class="action-button" id="update">
+            <input type="submit" onclick="setAction('/updateProfessor/index')" value="Update" class="action-button" id="update">
             <input type="text" id="indexField" name="index" placeholder="Введите индекс" class="index-field">
             <input type="submit" onclick="setAction('index')" value="Delete" class="action-button" id="delete">
         </form>

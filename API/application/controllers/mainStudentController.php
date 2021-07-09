@@ -13,7 +13,7 @@ class MainStudentController extends Controller
 
         $model = new MainStudent();
 
-        if(array_key_exists('index', $_POST)) {
+        if((array_key_exists('index', $_POST)) && (!empty($_POST["index"]))) {
             $index = $_POST['index'];
             $model->deleteRecord($index);
         }
