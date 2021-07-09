@@ -16,4 +16,10 @@ class MainProfessor extends Model{
         
     }
 
+    public function deleteRecord($index) {
+        $db = new Db();
+        $sql = "DELETE FROM professor WHERE idProfessor=$index";
+        $db->query($sql);
+    }
+
 }

@@ -2,6 +2,8 @@
 
 namespace application\core;
 
+use Exception;
+
 class View 
 {
 

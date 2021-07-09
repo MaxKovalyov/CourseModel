@@ -19,6 +19,7 @@ class CreateStudent extends Model{
         $perform = (float)$data['perform'];
         $sql = "INSERT INTO student (idStudent, nameStudent, addressStudent, phoneStudent, emailStudent, performStudent) VALUES ($id, '$name', '$address', '$phone', '$email', $perform);";
         $db->query($sql);
+        $db = null;
 
     }
 

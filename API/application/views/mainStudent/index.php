@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="/public/css/index.css">
     <script src="/public/js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript">
+    function setAction(action) {
+        $("#form").attr('action', action);
+    }
+    </script>
     <title>MKovalyov</title>
 </head>
 <body>
@@ -38,9 +43,11 @@
     </div>
     <div class="place-buttons">
         <a href="/createStudent/index" class="action-button" id="create">Create</a>
-        <a href="/updateStudent/index" class="action-button" id="update">Update</a>
-        <input type="text" id="indexField" placeholder="Введите индекс" class="index-field">
-        <a href="" class="action-button" id="delete">Delete</a>
+        <form action="" id="form" method="POST">
+            <input type="submit" onclick="setAction('/updateStudent/index')" value="Update" class="action-button" id="update">
+            <input type="text" id="indexField" name="index" placeholder="Введите индекс" class="index-field">
+            <input type="submit" onclick="setAction('index')" value="Delete" class="action-button" id="delete">
+        </form>
     </div>
 </body>
 </html>

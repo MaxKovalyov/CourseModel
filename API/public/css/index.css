@@ -33,6 +33,10 @@ header {
     text-align: center;
 }
 
+form {
+    display: inline;
+}
+
 .action-button {
     padding: 5px 15px;
     margin: 5px 15px;

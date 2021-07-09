@@ -26,7 +26,10 @@
             <div class="form-row">
                 <input type="text" id="salaryProfessor" required autocomplete="off"><label for="salaryProfessor">Зарплата</label>
             </div>
-            <p><input type="submit" value="Отправить" id="submitProfessor"></p>
+            <p>
+                <input type="submit" value="Отправить" id="submitProfessor">
+                <a href="/mainProfessor/index">Назад</a>
+            </p>
         </form>
     </div>
 </body>

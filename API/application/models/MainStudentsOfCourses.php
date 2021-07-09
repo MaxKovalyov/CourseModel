@@ -16,4 +16,10 @@ class MainStudentsOfCourses extends Model{
         
     }
 
+    public function deleteRecord($index) {
+        $db = new Db();
+        $sql = "DELETE FROM studentsofcourses WHERE idStudent=$index";
+        $db->query($sql);
+    }
+
 }

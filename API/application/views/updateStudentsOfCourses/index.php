@@ -23,7 +23,10 @@
             <div class="form-row">
                 <input type="text" id="noteStudent" required autocomplete="off"><label for="noteStudent">Оценка студента</label>
             </div>
-            <p><input type="submit" value="Отправить" id="submitSOC"></p>
+            <p>
+                <input type="submit" value="Отправить" id="submitSOC">
+                <a href="/mainStudentsOfCourses/index">Назад</a>
+            </p>
         </form>
     </div>
 </body>
