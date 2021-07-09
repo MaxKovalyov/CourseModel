@@ -30,7 +30,7 @@
             <?php
             
             foreach($data as $key=>$value) {
-                echo '<tr><td>'.$data[$key]['idStudent'].'</td><td>'.$data[$key]['nameStudent'].'</td><td>'.$data[$key]['adressStudent'].'</td><td>'.$data[$key]['phoneStudent'].'</td><td>'.$data[$key]['emailStudent'].'</td><td>'.$data[$key]['performStudent'].'</td></tr>';
+                echo '<tr><td>'.$data[$key]['idStudent'].'</td><td>'.$data[$key]['nameStudent'].'</td><td>'.$data[$key]['addressStudent'].'</td><td>'.$data[$key]['phoneStudent'].'</td><td>'.$data[$key]['emailStudent'].'</td><td>'.$data[$key]['performStudent'].'</td></tr>';
             }
 
             ?>

@@ -9,17 +9,20 @@
 </head>
 <body>
     <div class="form-container">
-        <form class="ui-form" action="">
+        <form class="ui-form" action="index" method="POST">
             <h3>Создание курса</h3>
             <div class="form-row">
-                <input type="text" id="idCourse" required autocomplete="off"><label for="idCorse">Номер курса</label>
+                <input type="text" id="idCourse" name="id" required autocomplete="off"><label for="idCorse">Номер курса</label>
             </div>
             <div class="form-row">
-                <input type="text" id="nameCourse" required autocomplete="off"><label for="nameCourse">Название курса</label>
+                <input type="text" id="nameCourse" name="name" required autocomplete="off"><label for="nameCourse">Название курса</label>
             </div>
             <div class="form-row">
-                <input type="text" id="costCourse" required autocomplete="off"><label for="costCourse">Стоимость курса</label>
+                <input type="text" id="costCourse" name="cost" required autocomplete="off"><label for="costCourse">Стоимость курса</label>
             </div>
-            <p><input type="submit" value="Отправить" id="submitCourse"></p>
+            <p>
+                <input type="submit" value="Отправить" id="submitCourse">
+                <a href="/mainCourse/index">Назад</a>
+            </p>
         </form>
     </div>

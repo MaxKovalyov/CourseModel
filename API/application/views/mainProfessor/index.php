@@ -29,7 +29,7 @@
             <?php
             
             foreach($data as $key=>$value) {
-                echo '<tr><td>'.$data[$key]['idProfessor'].'</td><td>'.$data[$key]['nameProfessor'].'</td><td>'.$data[$key]['adressProfessor'].'</td><td>'.$data[$key]['phoneProfessor'].'</td><td>'.$data[$key]['salaryProfessor'].'</td></tr>';
+                echo '<tr><td>'.$data[$key]['idProfessor'].'</td><td>'.$data[$key]['nameProfessor'].'</td><td>'.$data[$key]['addressProfessor'].'</td><td>'.$data[$key]['phoneProfessor'].'</td><td>'.$data[$key]['salaryProfessor'].'</td></tr>';
             }
 
             ?>

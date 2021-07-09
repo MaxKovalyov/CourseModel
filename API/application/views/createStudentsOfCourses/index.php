@@ -9,21 +9,24 @@
 </head>
 <body>
     <div class="form-container">
-        <form class="ui-form" action="">
+        <form class="ui-form" action="index" method="POST">
             <h3>Добавление информации о проведении курса</h3>
             <div class="form-row">
-                <input type="text" id="idCourse" required autocomplete="off"><label for="idCourse">Номер курса</label>
+                <input type="text" id="idCourse" name="idCourse" required autocomplete="off"><label for="idCourse">Номер курса</label>
             </div>
             <div class="form-row">
-                <input type="text" id="idStudent" required autocomplete="off"><label for="idStudent">Номер студента</label>
+                <input type="text" id="idStudent" name="idStudent" required autocomplete="off"><label for="idStudent">Номер студента</label>
             </div>
             <div class="form-row">
-                <input type="text" id="idProfessor" required autocomplete="off"><label for="idProfessor">Номер профессора</label>
+                <input type="text" id="idProfessor" name="idProfessor" required autocomplete="off"><label for="idProfessor">Номер профессора</label>
             </div>
             <div class="form-row">
-                <input type="text" id="noteStudent" required autocomplete="off"><label for="noteStudent">Оценка студента</label>
+                <input type="text" id="noteStudent" name="note" required autocomplete="off"><label for="noteStudent">Оценка студента</label>
             </div>
-            <p><input type="submit" value="Отправить" id="submitSOC"></p>
+            <p>
+                <input type="submit" value="Отправить" id="submitSOC">
+                <a href="/mainStudentsOfCourses/index">Назад</a>
+            </p>
         </form>
     </div>
 </body>

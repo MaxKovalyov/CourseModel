@@ -3,7 +3,7 @@
 return [
 
     'host' => 'localhost',
-    'name' => 'coursemodel',
+    'name' => 'coursemodel1',
     'user' => 'root',
     'password' => 'root123',
 

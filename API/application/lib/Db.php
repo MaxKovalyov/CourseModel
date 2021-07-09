@@ -26,14 +26,4 @@ class Db {
         return $query;
     }
 
-    public function row($sql) {
-        $result = $this->query($sql);
-        return $result->fetchAll(PDO::FETCH_ASSOC);
-    }
-
-    public function column($sql) {
-        $result = $this->query($sql);
-        return $result->fetchColumn();
-    }
-
 }
