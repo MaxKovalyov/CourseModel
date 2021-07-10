@@ -46,7 +46,7 @@
             <input type="text" id="indexField" name="index" placeholder="Введите индекс" class="index-field">
             <input type="submit" onclick="setAction('index')" value="Delete" class="action-button" id="delete">
         </form>
-        <a href="" class="action-button" id="report">Download report</a>
+        <a href="/mainStudentsOfCourses/report" class="action-button" id="report">Download report</a>
     </div>
 </body>
 </html>

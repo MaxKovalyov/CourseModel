@@ -37,6 +37,11 @@ return [
         'action' => 'index',
     ],
 
+    'mainStudentsOfCourses/report' => [
+        'controller' => 'mainStudentsOfCourses',
+        'action' => 'report',
+    ],
+
     'createStudent/index' => [
         'controller' => 'createStudent',
         'action' => 'index',

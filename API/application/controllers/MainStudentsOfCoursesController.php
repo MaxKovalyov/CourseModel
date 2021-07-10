@@ -5,6 +5,7 @@ namespace application\controllers;
 use application\core\Controller;
 use application\models\MainStudentsOfCourses;
 
+
 class MainStudentsOfCoursesController extends Controller
 {
 
@@ -24,6 +25,14 @@ class MainStudentsOfCoursesController extends Controller
         $data = $model->getDataFormTable();
 
         $this->view->render('Conducting courses',$data);
+    }
+
+    public function reportAction() {
+
+        $model = new MainStudentsOfCourses();
+        $model->generateReportExcel();
+
+        $this->view->render('Conducting courses report');
     }
 
 
